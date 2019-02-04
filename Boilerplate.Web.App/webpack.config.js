@@ -16,7 +16,11 @@ module.exports = {
         publicPath: 'wwwroot/'
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
+        alias: {
+            'themes/default/assets': path.resolve(__dirname, '../node_modules/semantic-ui-css/themes/default/assets')
+        }
+
     },
     module: {
         rules: [
@@ -32,7 +36,11 @@ module.exports = {
         {
             test: /\.html$/,
             use: { loader: "html-loader" }
-        }
+            },
+            {
+                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+                loader: 'url-loader?limit=100000'
+            }
 
         ]
     },

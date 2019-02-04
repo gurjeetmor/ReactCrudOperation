@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Boilerplate.Web.App.Models;
 
+
 namespace Boilerplate.Web.App.Controllers
 {
     public class HomeController : Controller
@@ -15,7 +16,7 @@ namespace Boilerplate.Web.App.Controllers
             return View();
         }
 
-
+       
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

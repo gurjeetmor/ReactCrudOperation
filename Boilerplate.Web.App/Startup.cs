@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.SpaServices.Webpack;
+using Microsoft.EntityFrameworkCore;
+using Boilerplate.Web.App.Models;
 
 namespace Boilerplate.Web.App
 {
@@ -20,6 +22,9 @@ namespace Boilerplate.Web.App
         {
 
             services.AddMvc();
+            var connection = @"Server=DESKTOP-CR2641A\SQLEXPRESS;Database=Talent;Trusted_Connection=True;ConnectRetryCount=0";
+            services.AddDbContext<TalentContext>(options => options.UseSqlServer(connection));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

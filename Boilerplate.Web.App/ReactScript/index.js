@@ -4,16 +4,27 @@ import './style/myStyle.css';
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import App from './Component/App.jsx';
-import 'bootstrap/dist/js/bootstrap.js'
+import 'bootstrap/dist/js/bootstrap.js';
+import 'semantic-ui-css/semantic.min.css';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 
-function renderApp() {
-    render(
-        <App/>,
-        document.getElementById("root")
-    );
-}
-renderApp();
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>, document.getElementById('root'));
+
+
+//function renderApp() {
+//    render(
+        
+//            <App />,
+           
+//        document.getElementById("root")
+//    );
+//}
+//renderApp();
 
 // Allow Hot Module Replacement
 if (module.hot) {
