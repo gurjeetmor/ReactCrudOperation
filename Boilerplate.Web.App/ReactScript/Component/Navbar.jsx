@@ -5,6 +5,7 @@ import Product from './Product/Product';
 import Customer from './Customer/Customer';
 import Store from './Store/Store';
 import Sales from './Sales/Sales';
+//import Sample from './Sample';
 
 
 class Navbar extends Component {
@@ -21,7 +22,8 @@ class Navbar extends Component {
                         <li><Link to="/Product">Product</Link></li>
                         <li><Link to="/Customer">Customer</Link></li>
                         <li><Link to="/Store">Store</Link></li>
-                        <li><Link to="/Sales">Sales</Link></li>
+                    <li><Link to="/Sales">Sales</Link></li>
+                    
                         
                     </ul>
                     

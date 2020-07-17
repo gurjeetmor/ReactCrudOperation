@@ -6,6 +6,7 @@ import Customer from './Customer/Customer';
 import Store from './Store/Store';
 import Sales from './Sales/Sales';
 
+
 const Routing = () =>
     (
         <Switch>
@@ -14,6 +15,8 @@ const Routing = () =>
             <Route path="/product" component={Product} />
             <Route path="/Store" component={Store} />
             <Route path="/Sales" component={Sales} />
+           
+
 
 
         </Switch>
