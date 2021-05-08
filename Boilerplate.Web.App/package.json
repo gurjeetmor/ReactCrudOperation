@@ -13,7 +13,7 @@
   "license": "MIT",
   "devDependencies": {
     "font-awesome": "^4.7.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "aspnet-webpack": "^3.0.0",
     "aspnet-webpack-react": "^3.0.0",
     "babel-core": "^6.26.3",
